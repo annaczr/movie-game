@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Nana</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="score" class="container"></div>
+  <div class="container" id="select">
+    <h2>Seleção: Jogador 1</h2>
+    <p>Olá, jogador! Digite um filme para seu colega tentar acertar</p>
+    <input type="text" name="" id="inputMovie">
+    <button id="send" onclick="getMovie()">enviar</button>
+  </div>
+  <div id="guess" class="container">
+    <h2>Adivinhar: Jogador 2</h2>
+    <p>Olá, jogador! Tente adivinhar o filme.</p>
+    <div class="hint" id="plot"></div>
+    <div class="hint" id="actors"></div>
+    <div class="hint" id="relese"></div>
+    <div class="hint" id="launch"></div>
+    <div class="hint" id="poster"></div>
+
+    <button id="getAnswer" onclick="getAnswer()">ver resposta</button>
+  </div>
+  
+  <div id="result" class="container">
+    <h3 id="answer"></h3>
+    <a href="">ver mais</a> 
+    <button onclick="toggleWin()">acertei!</button>
+    <button onclick="toggleLose()">errei</button>
+  </div>
+
+  <div id="win" class="container">
+    <h2>ganhou</h2>
+    <img  src="https://cataas.com/cat">
+  </div>
+  <div id="lose" class="container">
+    <h2>perdeu</h2>
+    <img src="https://cataas.com/cat">
+  </div>
+</body>
+<script src="./script.js"></script>
+</html>
